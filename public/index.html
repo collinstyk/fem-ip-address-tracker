@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | IP Address Tracker</title>
+
+    <link rel="stylesheet" href="styles.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+
+    <script defer src="app.js"></script>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        position: absolute;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 3;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="top-container"></div>
+
+    <div class="ip-address-container">
+      <h1>IP Address Tracker</h1>
+      <form>
+        <input
+          type="text"
+          class="ip-search"
+          placeholder="Search for any IP address or domain"
+        /><button>
+          <img src="./images/icon-arrow.svg" alt="" />
+        </button>
+      </form>
+      <div class="ip-address-display">
+        <div class="ip-address contains-divider">
+          <h5>IP Address</h5>
+          <p>-</p>
+        </div>
+        <div class="location contains-divider">
+          <h5>Location</h5>
+          <p>-</p>
+        </div>
+        <div class="timezone contains-divider">
+          <h5>Timezone</h5>
+          <p>UTC -</p>
+        </div>
+        <div class="isp">
+          <h5>ISP</h5>
+          <p>-</p>
+        </div>
+        <!-- add offset value dynamically using the API -->
+      </div>
+    </div>
+
+    <div id="map"></div>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">CollinsTYK</a>.
+    </div>
+  </body>
+</html>

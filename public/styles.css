@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  height: 100dvh;
+  width: 100dvw;
+  font-family: "Rubik", sans-serif;
+}
+
+.top-container {
+  width: 100%;
+  height: 40%;
+  background-image: url("./images/pattern-bg-mobile.png");
+  background-size: 100% 100%;
+  text-align: center;
+}
+
+.ip-address-container {
+  text-align: center;
+  width: 90%;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.ip-address-container > h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: white;
+  padding-bottom: 5px;
+}
+
+.ip-address-container > form {
+  width: 100%;
+  height: 2.5rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.ip-address-container > form > input {
+  height: 100%;
+  width: 85%;
+  border: 0;
+  font-size: 16px;
+  border-radius: 0.635rem 0 0 0.635rem;
+  padding-left: 0.9rem;
+  outline: 0;
+}
+
+.ip-address-container > form > button {
+  background-color: black;
+  border: 0;
+  margin: 0;
+  height: 100%;
+  width: 15%;
+  border-radius: 0 0.635rem 0.635rem 0;
+}
+
+.ip-address-container > form > button:hover {
+  background-color: rgb(49, 47, 47);
+}
+
+.ip-address-display {
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-radius: 0.635rem;
+  padding: 1rem 0;
+  box-shadow: 0 1px 5px 0 rgb(102, 102, 102);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.ip-address-display > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+.ip-address-display > div > h5 {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: hsl(0, 0%, 59%);
+}
+
+.ip-address-display > div > p {
+  font-weight: 500;
+}
+
+#map {
+  height: 60%;
+  z-index: 1;
+}
+
+@media (min-width: 40rem) {
+  .top-container {
+    width: 100%;
+    height: 35%;
+    background-image: url("./images/pattern-bg-desktop.png");
+    background-size: 100% 100%;
+    text-align: center;
+  }
+
+  .ip-address-container {
+    width: 95%;
+    gap: 1.5rem;
+  }
+
+  .ip-address-container > h1 {
+    font-size: 1.3rem;
+    padding-bottom: 0;
+  }
+
+  .ip-address-container > form {
+    width: 70%;
+    margin: auto;
+    height: 2.5rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .ip-address-container > form > input {
+    width: 90%;
+  }
+
+  .ip-address-container > form > button {
+    width: 10%;
+  }
+
+  .ip-address-display {
+    margin-top: 5px;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: flex-start;
+    padding: 1.5rem 2rem;
+  }
+
+  .ip-address-display > div {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    gap: 4px;
+    position: relative;
+  }
+
+  /*A good example of how to center items vertically*/
+  .ip-address-display > div.contains-divider::after {
+    position: absolute;
+    content: "";
+    background: hsl(0, 0%, 67%);
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    height: 80%;
+    width: 1px;
+  }
+
+  #map {
+    height: 65%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ip-address-container {
+    width: 80%;
+  }
+
+  .ip-address-container > form {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .top-container {
+    height: 30%;
+  }
+
+  .ip-address-container {
+    width: 80%;
+  }
+
+  .ip-address-container > form {
+    width: 50%;
+  }
+
+  #map {
+    height: 70%;
+  }
+}
+
+@media (min-width: 1440px) {
+  .ip-address-container > form {
+    width: 30%;
+  }
+
+  .ip-address-container {
+    width: 70%;
+  }
+}
