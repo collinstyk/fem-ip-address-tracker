@@ -16,8 +16,15 @@ export function getAddress(ipAddress) {
             const data = yield res.json();
             const { ip, location, isp } = data;
             const { city, lat, lng, region, timezone } = location;
-            const addressDetails = { ip, city, lat, lng, region, timezone, isp };
-            console.log(addressDetails);
+            const addressDetails = {
+                ip,
+                city,
+                lat,
+                lng,
+                region,
+                timezone,
+                isp,
+            };
             return addressDetails;
         }
         catch (err) {
