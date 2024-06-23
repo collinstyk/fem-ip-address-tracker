@@ -1,7 +1,8 @@
-import { getAddress } from "./data.js";
+import { getAddress, getInitialAddress } from "./data.js";
 
 class App {
   #map: any;
+  #icon;
   #mapZoomLevel: number;
   #maxZoomLevel: number;
   #form;
@@ -12,6 +13,10 @@ class App {
   #displayISP;
 
   constructor(mapZoomLevel: number, maxZoomLevel: number) {
+    // @ts-ignore
+    this.#icon = L.icon({
+      iconUrl: "../public/images/icon-location.svg",
+    });
     this.#mapZoomLevel = mapZoomLevel;
     this.#maxZoomLevel = maxZoomLevel;
     this.#form = document.querySelector("form") as HTMLFormElement;
@@ -46,23 +51,44 @@ class App {
       attribution:
         '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
     }).addTo(this.#map);
+
+    // @ts-ignore
+    L.marker([lat, lng], { icon: this.#icon }).addTo(this.#map);
   }
 
   #getPosition() {
-    navigator.geolocation.getCurrentPosition((pos) => {
-      const { latitude: lat, longitude: lng } = pos.coords;
-      const position = { lat, lng };
-      this.#loadMap(position),
-        () => {
-          alert(
-            "Could not get position, but you search for any IP address to track 😊."
-          );
-          this.#loadMap({ lat: 51.5, lng: -0.09 });
-        };
-    });
+    navigator.geolocation.getCurrentPosition(
+      (pos) => {
+        const { latitude: lat, longitude: lng } = pos.coords;
+        const position = { lat, lng };
+        this.#loadMap(position);
+      },
+      () => {
+        alert(
+          "Could not get position, but you search for any IP address to track 😊."
+        );
+        this.#loadMap({ lat: 51.5, lng: -0.09 });
+      }
+    );
   }
 
   #trackIpAddress() {
+    getInitialAddress().then((res) => {
+      // @ts-ignore
+      const { city, ip, isp, lat, lng, region, timezone } = res;
+
+      const locationText = `${city}, ${region}`;
+
+      this.#input.value = ip;
+
+      this.#map.setView([lat, lng], this.#mapZoomLevel);
+
+      this.#displayIpAddress.innerText = ip;
+      this.#displayLocation.innerText = locationText;
+      this.#displayISP.innerText = isp;
+      this.#displayTimezone.innerText = `UTC ${timezone}`;
+    });
+
     this.#form.addEventListener("submit", async (e: Event) => {
       e.preventDefault();
 
@@ -79,6 +105,9 @@ class App {
 
       this.#map.setView([lat, lng], this.#mapZoomLevel);
 
+      // @ts-ignore
+      L.marker([lat, lng], { icon: this.#icon }).addTo(this.#map);
+
       this.#displayIpAddress.innerText = ip;
       this.#displayLocation.innerText = locationText;
       this.#displayISP.innerText = isp;
@@ -87,4 +116,4 @@ class App {
   }
 }
 
-const app = new App(13, 19);
+const app = new App(12, 19);

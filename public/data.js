@@ -12,7 +12,7 @@ export function getAddress(ipAddress) {
         try {
             const res = yield fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_U1dVROltGOtfOiuRLF8rYyCCJLGay&ipAddress=${ipAddress}`);
             if (!res.ok)
-                throw new Error("invalid IP address format!");
+                throw new Error("invalid IP address");
             const data = yield res.json();
             const { ip, location, isp } = data;
             const { city, lat, lng, region, timezone } = location;
@@ -32,5 +32,23 @@ export function getAddress(ipAddress) {
                 ? ", this could be due to bad network ⚠."
                 : ""}`);
         }
+    });
+}
+export function getInitialAddress() {
+    return __awaiter(this, void 0, void 0, function* () {
+        const res = yield fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_U1dVROltGOtfOiuRLF8rYyCCJLGay&ipAddress`);
+        const data = yield res.json();
+        const { ip, location, isp } = data;
+        const { city, lat, lng, region, timezone } = location;
+        const addressDetails = {
+            ip,
+            city,
+            lat,
+            lng,
+            region,
+            timezone,
+            isp,
+        };
+        return addressDetails;
     });
 }
