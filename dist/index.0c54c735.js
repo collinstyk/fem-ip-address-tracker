@@ -800,7 +800,7 @@ ${frame.code}`;
               this,
               _App_icon,
               L.icon({
-                iconUrl: "/icon-location.svg",
+                iconUrl: "icon-location.svg",
               }),
               "f"
             );
