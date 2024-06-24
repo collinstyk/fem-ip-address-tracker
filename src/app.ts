@@ -2,7 +2,7 @@ import { getAddress, getInitialAddress } from "./data.js";
 
 class App {
   #map: any;
-  #icon;
+
   #mapZoomLevel: number;
   #maxZoomLevel: number;
   #form;
@@ -13,10 +13,6 @@ class App {
   #displayISP;
 
   constructor(mapZoomLevel: number, maxZoomLevel: number) {
-    // @ts-ignore
-    this.#icon = L.icon({
-      iconUrl: "../public/images/icon-location.svg",
-    });
     this.#mapZoomLevel = mapZoomLevel;
     this.#maxZoomLevel = maxZoomLevel;
     this.#form = document.querySelector("form") as HTMLFormElement;
@@ -53,7 +49,7 @@ class App {
     }).addTo(this.#map);
 
     // @ts-ignore
-    L.marker([lat, lng], { icon: this.#icon }).addTo(this.#map);
+    L.marker([lat, lng]).addTo(this.#map);
   }
 
   #getPosition() {
@@ -106,7 +102,7 @@ class App {
       this.#map.setView([lat, lng], this.#mapZoomLevel);
 
       // @ts-ignore
-      L.marker([lat, lng], { icon: this.#icon }).addTo(this.#map);
+      L.marker([lat, lng]).addTo(this.#map);
 
       this.#displayIpAddress.innerText = ip;
       this.#displayLocation.innerText = locationText;
