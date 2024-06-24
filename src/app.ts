@@ -65,7 +65,7 @@ class App {
       },
       () => {
         alert(
-          "Could not get position, but you search for any IP address to track 😊."
+          "Could not get position, but you can search for any IP address to track 😊."
         );
         this.#loadMap({ lat: 51.5, lng: -0.09 });
       }

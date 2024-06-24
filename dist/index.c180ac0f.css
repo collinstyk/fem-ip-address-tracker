@@ -1,0 +1,215 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100dvw;
+  height: 100dvh;
+  font-family: Rubik, sans-serif;
+}
+
+.top-container {
+  text-align: center;
+  background-image: url("pattern-bg-mobile.315d7b33.png");
+  background-size: 100% 100%;
+  width: 100%;
+  height: 40%;
+}
+
+.ip-address-container {
+  text-align: center;
+  z-index: 2;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1rem;
+  width: 90%;
+  display: flex;
+  position: absolute;
+  top: 5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ip-address-container > h1 {
+  color: #fff;
+  padding-bottom: 5px;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.ip-address-container > form {
+  border-radius: 1rem;
+  align-items: center;
+  width: 100%;
+  height: 2.5rem;
+  display: flex;
+}
+
+.ip-address-container > form > input {
+  border: 0;
+  border-radius: .635rem 0 0 .635rem;
+  outline: 0;
+  width: 85%;
+  height: 100%;
+  padding-left: .9rem;
+  font-size: 16px;
+}
+
+.ip-address-container > form > button {
+  background-color: #000;
+  border: 0;
+  border-radius: 0 .635rem .635rem 0;
+  width: 15%;
+  height: 100%;
+  margin: 0;
+}
+
+.ip-address-container > form > button:hover {
+  background-color: #312f2f;
+}
+
+.ip-address-display {
+  text-align: center;
+  background-color: #fff;
+  border-radius: .635rem;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+  width: 100%;
+  padding: 1rem 0;
+  display: flex;
+  box-shadow: 0 1px 5px #666;
+}
+
+.ip-address-display > div {
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+  display: flex;
+}
+
+.ip-address-display > div > h5 {
+  text-transform: uppercase;
+  color: #969696;
+  font-size: .7rem;
+  font-weight: 600;
+}
+
+.ip-address-display > div > p {
+  font-weight: 500;
+}
+
+#map {
+  z-index: 1;
+  height: 60%;
+}
+
+@media (width >= 40rem) {
+  .top-container {
+    text-align: center;
+    background-image: url("pattern-bg-desktop.af7f6690.png");
+    background-size: 100% 100%;
+    width: 100%;
+    height: 35%;
+  }
+
+  .ip-address-container {
+    gap: 1.5rem;
+    width: 95%;
+  }
+
+  .ip-address-container > h1 {
+    padding-bottom: 0;
+    font-size: 1.3rem;
+  }
+
+  .ip-address-container > form {
+    border-radius: 1rem;
+    align-items: center;
+    width: 70%;
+    height: 2.5rem;
+    margin: auto;
+    display: flex;
+  }
+
+  .ip-address-container > form > input {
+    width: 90%;
+  }
+
+  .ip-address-container > form > button {
+    width: 10%;
+  }
+
+  .ip-address-display {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 1rem;
+    margin-top: 5px;
+    padding: 1.5rem 2rem;
+  }
+
+  .ip-address-display > div {
+    text-align: left;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 4px;
+    width: 25%;
+    display: flex;
+    position: relative;
+  }
+
+  .ip-address-display > div.contains-divider:after {
+    content: "";
+    background: #ababab;
+    width: 1px;
+    height: 80%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  #map {
+    height: 65%;
+  }
+}
+
+@media (width >= 768px) {
+  .ip-address-container {
+    width: 80%;
+  }
+
+  .ip-address-container > form {
+    width: 60%;
+  }
+}
+
+@media (width >= 1024px) {
+  .top-container {
+    height: 30%;
+  }
+
+  .ip-address-container {
+    width: 80%;
+  }
+
+  .ip-address-container > form {
+    width: 50%;
+  }
+
+  #map {
+    height: 70%;
+  }
+}
+
+@media (width >= 1440px) {
+  .ip-address-container > form {
+    width: 30%;
+  }
+
+  .ip-address-container {
+    width: 70%;
+  }
+}
+/*# sourceMappingURL=index.c180ac0f.css.map */

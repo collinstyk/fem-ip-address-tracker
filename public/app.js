@@ -66,7 +66,7 @@ _App_map = new WeakMap(), _App_icon = new WeakMap(), _App_mapZoomLevel = new Wea
         const position = { lat, lng };
         __classPrivateFieldGet(this, _App_instances, "m", _App_loadMap).call(this, position);
     }, () => {
-        alert("Could not get position, but you search for any IP address to track 😊.");
+        alert("Could not get position, but you can search for any IP address to track 😊.");
         __classPrivateFieldGet(this, _App_instances, "m", _App_loadMap).call(this, { lat: 51.5, lng: -0.09 });
     });
 }, _App_trackIpAddress = function _App_trackIpAddress() {
