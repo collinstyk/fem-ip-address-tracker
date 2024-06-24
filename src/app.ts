@@ -57,34 +57,46 @@ class App {
       (pos) => {
         const { latitude: lat, longitude: lng } = pos.coords;
         const position = { lat, lng };
+        getInitialAddress().then((res) => {
+          // @ts-ignore
+          const { city, ip, isp, lat, lng, region, timezone } = res;
+
+          const locationText = `${city}, ${region}`;
+
+          this.#input.value = ip;
+
+          this.#displayIpAddress.innerText = ip;
+          this.#displayLocation.innerText = locationText;
+          this.#displayISP.innerText = isp;
+          this.#displayTimezone.innerText = `UTC ${timezone}`;
+        });
         this.#loadMap(position);
       },
       () => {
         alert(
           "Could not get position, but you can search for any IP address to track 😊."
         );
-        this.#loadMap({ lat: 51.5, lng: -0.09 });
+        getInitialAddress().then((res) => {
+          const data = res;
+
+          const { city, ip, isp, lat, lng, region, timezone } = res;
+
+          const locationText = `${city}, ${region}`;
+
+          this.#input.value = ip;
+
+          this.#loadMap({ lat, lng });
+
+          this.#displayIpAddress.innerText = ip;
+          this.#displayLocation.innerText = locationText;
+          this.#displayISP.innerText = isp;
+          this.#displayTimezone.innerText = `UTC ${timezone}`;
+        });
       }
     );
   }
 
   #trackIpAddress() {
-    getInitialAddress().then((res) => {
-      // @ts-ignore
-      const { city, ip, isp, lat, lng, region, timezone } = res;
-
-      const locationText = `${city}, ${region}`;
-
-      this.#input.value = ip;
-
-      this.#map.setView([lat, lng], this.#mapZoomLevel);
-
-      this.#displayIpAddress.innerText = ip;
-      this.#displayLocation.innerText = locationText;
-      this.#displayISP.innerText = isp;
-      this.#displayTimezone.innerText = `UTC ${timezone}`;
-    });
-
     this.#form.addEventListener("submit", async (e: Event) => {
       e.preventDefault();
 

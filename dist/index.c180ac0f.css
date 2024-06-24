@@ -155,6 +155,7 @@ body {
     justify-content: flex-start;
     gap: 4px;
     width: 25%;
+    padding-right: .2rem;
     display: flex;
     position: relative;
   }
@@ -187,7 +188,7 @@ body {
 
 @media (width >= 1024px) {
   .top-container {
-    height: 30%;
+    height: 36%;
   }
 
   .ip-address-container {
@@ -199,7 +200,7 @@ body {
   }
 
   #map {
-    height: 70%;
+    height: 64%;
   }
 }
 

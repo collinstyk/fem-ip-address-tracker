@@ -157,6 +157,7 @@ body {
     width: 25%;
     gap: 4px;
     position: relative;
+    padding-right: 0.2rem;
   }
 
   /*A good example of how to center items vertically*/
@@ -188,7 +189,7 @@ body {
 
 @media (min-width: 1024px) {
   .top-container {
-    height: 30%;
+    height: 36%;
   }
 
   .ip-address-container {
@@ -200,7 +201,7 @@ body {
   }
 
   #map {
-    height: 70%;
+    height: 64%;
   }
 }
 

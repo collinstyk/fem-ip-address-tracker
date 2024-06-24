@@ -672,29 +672,35 @@ _App_map = new WeakMap(), _App_mapZoomLevel = new WeakMap(), _App_maxZoomLevel =
             lat,
             lng
         };
+        (0, _dataJs.getInitialAddress)().then((res)=>{
+            // @ts-ignore
+            const { city, ip, isp, lat, lng, region, timezone } = res;
+            const locationText = `${city}, ${region}`;
+            __classPrivateFieldGet(this, _App_input, "f").value = ip;
+            __classPrivateFieldGet(this, _App_displayIpAddress, "f").innerText = ip;
+            __classPrivateFieldGet(this, _App_displayLocation, "f").innerText = locationText;
+            __classPrivateFieldGet(this, _App_displayISP, "f").innerText = isp;
+            __classPrivateFieldGet(this, _App_displayTimezone, "f").innerText = `UTC ${timezone}`;
+        });
         __classPrivateFieldGet(this, _App_instances, "m", _App_loadMap).call(this, position);
     }, ()=>{
         alert("Could not get position, but you can search for any IP address to track \uD83D\uDE0A.");
-        __classPrivateFieldGet(this, _App_instances, "m", _App_loadMap).call(this, {
-            lat: 51.5,
-            lng: -0.09
+        (0, _dataJs.getInitialAddress)().then((res)=>{
+            const data = res;
+            const { city, ip, isp, lat, lng, region, timezone } = res;
+            const locationText = `${city}, ${region}`;
+            __classPrivateFieldGet(this, _App_input, "f").value = ip;
+            __classPrivateFieldGet(this, _App_instances, "m", _App_loadMap).call(this, {
+                lat,
+                lng
+            });
+            __classPrivateFieldGet(this, _App_displayIpAddress, "f").innerText = ip;
+            __classPrivateFieldGet(this, _App_displayLocation, "f").innerText = locationText;
+            __classPrivateFieldGet(this, _App_displayISP, "f").innerText = isp;
+            __classPrivateFieldGet(this, _App_displayTimezone, "f").innerText = `UTC ${timezone}`;
         });
     });
 }, _App_trackIpAddress = function _App_trackIpAddress() {
-    (0, _dataJs.getInitialAddress)().then((res)=>{
-        // @ts-ignore
-        const { city, ip, isp, lat, lng, region, timezone } = res;
-        const locationText = `${city}, ${region}`;
-        __classPrivateFieldGet(this, _App_input, "f").value = ip;
-        __classPrivateFieldGet(this, _App_map, "f").setView([
-            lat,
-            lng
-        ], __classPrivateFieldGet(this, _App_mapZoomLevel, "f"));
-        __classPrivateFieldGet(this, _App_displayIpAddress, "f").innerText = ip;
-        __classPrivateFieldGet(this, _App_displayLocation, "f").innerText = locationText;
-        __classPrivateFieldGet(this, _App_displayISP, "f").innerText = isp;
-        __classPrivateFieldGet(this, _App_displayTimezone, "f").innerText = `UTC ${timezone}`;
-    });
     __classPrivateFieldGet(this, _App_form, "f").addEventListener("submit", (e)=>__awaiter(this, void 0, void 0, function*() {
             e.preventDefault();
             const ipAddress = __classPrivateFieldGet(this, _App_input, "f").value;
