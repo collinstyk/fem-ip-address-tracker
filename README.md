@@ -60,7 +60,7 @@ I need to improve in the area of version control with git and coding with typesc
 ## Author
 
 - Frontend Mentor - [@collinstyk](https://www.frontendmentor.io/profile/collinstyk)
-- Twitter - [@dozie_jr](https://x.com/dozie_jnr?t=xoii2xr6b7fBUghaFEajnw&s=09)
+- Twitter - [@dozie_jr](https://x.com/dozie_jr?t=xoii2xr6b7fBUghaFEajnw&s=09)
 
 ### Acknowledgments
 

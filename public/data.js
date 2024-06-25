@@ -36,7 +36,7 @@ export function getAddress(ipAddress) {
 }
 export function getInitialAddress() {
     return __awaiter(this, void 0, void 0, function* () {
-        const res = yield fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_U1dVROltGOtfOiuRLF8rYyCCJLGay&ipAddress`);
+        const res = yield fetch(`https://geo.ipify.org/api/v2/country,city?apiKey=at_U1dVROltGOtfOiuRLF8rYyCCJLGay`);
         const data = yield res.json();
         const { ip, location, isp } = data;
         const { city, lat, lng, region, timezone } = location;

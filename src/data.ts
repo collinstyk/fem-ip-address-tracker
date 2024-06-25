@@ -34,7 +34,7 @@ export async function getAddress(ipAddress: string) {
 
 export async function getInitialAddress() {
   const res = await fetch(
-    `https://geo.ipify.org/api/v2/country,city?apiKey=at_U1dVROltGOtfOiuRLF8rYyCCJLGay&ipAddress`
+    `https://geo.ipify.org/api/v2/country,city?apiKey=at_U1dVROltGOtfOiuRLF8rYyCCJLGay`
   );
 
   const data = await res.json();

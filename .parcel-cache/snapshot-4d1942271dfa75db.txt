@@ -38,7 +38,7 @@
 133C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\csso\node_modules\css-tree\lib\syntax\node\Identifier.js133636917786739360 0
 105C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\css-tree\lib\utils\string.js133636917794984620 0
 116C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\transformer-babel\src\config.js133636917716259959 0
-68C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist133637203340329558 1
+68C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist133637208376889110 1
 86C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\env-paths133636917698161347 1
 118C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\optimizer-css\lib\CSSOptimizer.js133636917687777243 0
 113C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@swc\helpers\cjs\_inherits_loose.cjs133636917748301490 0
@@ -102,7 +102,7 @@
 133C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\htmlnano\docs\versioned_docs\version-2.0.0\030-config.md133636917753668400 0
 113C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\transformer-svg\package.json133636917716259959 0
 94C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\timsort\README.md133636917690465782 0
-75C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\src\data.ts133636439137820116 0
+75C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\src\data.ts133637208358741669 0
 96C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\semver\package.json133636917747821776 0
 106C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\screenshots\Ip-address-tracker-Desktop.png133637068081671439 0
 89C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\entities\lib133636917735808683 1
@@ -122,7 +122,7 @@
 110C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\electron-to-chromium\package.json133636917721047184 0
 95C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\error-ex\README.md133636917695532858 0
 119C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\svgo\plugins\removeAttributesBySelector.js133636917755017617 0
-77C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\public\app.js133637203337771566 0
+77C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\public\app.js133637208371164957 0
 153C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\msgpackr-extract\node_modules\.bin\node-gyp-build-optional-packages-optional133636917855517543 0
 127C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\htmlnano\lib\modules\collapseBooleanAttributes.cjs133636917703116556 0
 108C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\caniuse-lite\data\regions\MS.js133636917834344306 0
@@ -137,7 +137,7 @@
 85C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\css-tree133636917799142210 1
 164C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\tokenizer\char-code-definitions.js133636917723185955 0
 122C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\csso\node_modules\css-tree\lib\lexer\index.js133636917787978646 0
-78C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\public\data.js133637150594166154 0
+78C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\public\data.js133637208370955070 0
 108C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\transformer-raw\LICENSE133636917679692212 0
 125C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\css-select\node_modules\domhandler\lib\node.d.ts133636917727023739 0
 81C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\public\styles.css133637195364157107 0
@@ -472,7 +472,7 @@
 132C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\csso\node_modules\css-tree\lib\syntax\scope\selector.js133636917793865272 0
 102C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@babel\code-frame\LICENSE133636917679352404 0
 108C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\caniuse-lite\data\regions\NA.js133636917835133844 0
-99C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\pattern-bg-mobile.315d7b33.png133637203340119660 0
+99C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\pattern-bg-mobile.315d7b33.png133637208376709214 0
 93C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\msgpackr-extract133636917711603954 1
 108C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\caniuse-lite\data\regions\IT.js133636917830446547 0
 91C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\node-addon-api133636917731671062 1
@@ -1721,7 +1721,7 @@
 140C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@swc\helpers\_\_class_apply_descriptor_destructure\package.json133636917788908108 0
 96C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\nth-check\README.md133636917731191350 0
 119C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\css-select\lib\pseudo-selectors\filters.js133636917718778494 0
-92C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\icon-arrow.8459a6c5.svg133637203340109677 0
+92C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\icon-arrow.8459a6c5.svg133637208376399391 0
 97C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\csso\lib\compress.js133636917753288614 0
 103C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\nth-check\lib\compile.d.ts133636917731870944 0
 132C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\lmdb\node_modules\node-addon-api\tools\eslint-format.js133636917726254185 0
@@ -2121,7 +2121,7 @@
 128C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_drop.c133636917745682998 0
 108C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\htmlnano\lib\modules\custom.mjs133636917759794883 0
 119C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\caniuse-lite\data\features\inline-block.js133636917827947977 0
-90C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\index.0c54c735.js.map133637203340219615 0
+90C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\index.0c54c735.js.map133637208376869137 0
 128C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\lmdb\dependencies\lmdb\libraries\liblmdb\mdb_dump.1133636917735009152 0
 124C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\caniuse-lite\data\features\css-width-stretch.js133636917796633666 0
 119C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\csso\node_modules\css-tree\dist\version.js133636917797653069 0
@@ -2178,7 +2178,7 @@
 95C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\json5\package.json133636917720597464 0
 93C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\json5\lib\cli.js133636917679982059 0
 97C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\json5\lib\index.d.ts133636917728193066 0
-100C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\pattern-bg-desktop.af7f6690.png133637203340139659 0
+100C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\pattern-bg-desktop.af7f6690.png133637208376749197 0
 95C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\json5\lib\index.js133636917696522300 0
 123C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\csso\node_modules\css-tree\cjs\syntax\function133636917774156604 1
 98C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\json5\lib\register.js133636917713661429 0
@@ -5025,7 +5025,7 @@
 126C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\transformer-babel\lib\BabelTransformer.js133636917709592931 0
 119C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\transformer-babel\lib\constants.js133636917717269375 0
 114C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\transformer-babel\lib\flow.js133636917719198248 0
-95C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\favicon-32x32.60a50b4d.png133637203339799861 0
+95C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\favicon-32x32.60a50b4d.png133637208376429384 0
 150C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\optimizer-htmlnano\node_modules\css-tree\lib\syntax\node\Block.js133636917717459251 0
 113C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\transformer-babel\lib\jsx.js133636917721906699 0
 115C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\transformer-babel\lib\types.js133636917727643381 0
@@ -5339,7 +5339,7 @@
 156C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\restructure\4-restructShorthand.js133636917704665666 0
 152C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\restructure\6-restructBlock.js133636917710278483 0
 151C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\restructure\7-mergeRuleset.js133636917713801356 0
-91C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\index.c180ac0f.css.map133637203340309563 0
+91C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\index.c180ac0f.css.map133637208376869137 0
 150C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\restructure\prepare\index.js133636917741685309 0
 160C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\restructure\prepare\processSelector.js133636917744313783 0
 156C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\node_modules\@parcel\optimizer-svgo\node_modules\csso\lib\restructure\prepare\specificity.js133636917746172716 0
@@ -5975,5 +5975,5 @@
 86C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\icon-location.svg133538365800000000 0
 95C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\index.0c54c735_BASE_797.js133637155818394905 0
 101C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\.index.0c54c735_LOCAL_797.js.swp133637155996363020 0
-86C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\index.0c54c735.js133637203340119660 0
-87C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\index.c180ac0f.css133637203340119660 0
+87C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\index.c180ac0f.css133637208376559299 0
+86C:\Users\USER\Documents\Ongoing Projects\fem-ip-address-tracker\dist\index.0c54c735.js133637208376719205 0
